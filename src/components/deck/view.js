@@ -1,6 +1,6 @@
 import React from "react";
 
-const ConstPlaceholder = () => (
+const CardPlaceholder = () => (
   <img src={process.env.PUBLIC_URL + `/SVG-cards/png/1x/back.png`} />
 );
 
@@ -40,7 +40,7 @@ class View extends React.Component {
     const { deck, dealt } = this.state;
 
     return (
-      <div>
+      <>
         <div>
           <CardPlaceholder />
           {dealt.map(c => {
@@ -53,7 +53,7 @@ class View extends React.Component {
           <button onClick={this.handleShuffle}>Shuffle</button>
           <button onClick={this.handleDeal}>Deal</button>
         </div>
-      </div>
+      </>
     );
   }
 }
