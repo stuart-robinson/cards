@@ -24,34 +24,38 @@ class View extends React.Component {
   handleNew = () => {
     const { deck } = this.state;
     deck.build();
-    this.setState({ deck: deck, dealt: [] });
+    this.setState({ deck: deck });
   };
 
   handleDeal = () => {
-    const { deck, dealt } = this.state;
-    dealt.unshift(deck.deal());
-    this.setState({ deck: deck, dealt: dealt });
+    const { deck } = this.state;
+    deck.deal();
+    this.setState({ deck: deck });
   };
 
   handleShuffle = () => {
     console.log("shuffle not implemented");
   };
   render() {
-    const { deck, dealt } = this.state;
-
+    const { deck } = this.state;
+    const isDeckEmpty = deck.cards.length === 0;
     return (
       <>
         <div>
           <CardPlaceholder />
-          {dealt.map(c => {
+          {deck.dealt.map(c => {
             return <Card suit={c.suit} card={c.card} />;
           })}
           <p>Cards left: {deck.cards.length}</p>
         </div>
         <div>
           <button onClick={this.handleNew}>New Deck</button>
-          <button onClick={this.handleShuffle}>Shuffle</button>
-          <button onClick={this.handleDeal}>Deal</button>
+          <button onClick={this.handleShuffle} disabled={isDeckEmpty}>
+            Shuffle
+          </button>
+          <button onClick={this.handleDeal} disabled={isDeckEmpty}>
+            Deal
+          </button>
         </div>
       </>
     );

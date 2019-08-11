@@ -18,9 +18,14 @@ const cardValues = [
 
 class Deck {
   constructor() {
+    this.reset();
+  }
+  reset() {
     this.cards = [];
+    this.dealt = [];
   }
   build() {
+    this.reset();
     let cards = [];
     for (var s = 0; s < suits.length; s++) {
       for (var c = 0; c < cardValues.length; c++) {
@@ -30,7 +35,9 @@ class Deck {
     this.cards = cards;
   }
   deal() {
-    return this.cards.pop();
+    let card = this.cards.pop();
+    this.dealt.push(card);
+    return card;
   }
   peek() {
     return this.cards.slice(-1)[0];
