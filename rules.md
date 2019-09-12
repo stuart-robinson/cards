@@ -2,11 +2,11 @@ The Game
 
 * The game is played with a deck of 52 cards
 * Prior to starting the game the cards must be shuffled
-* The dealer will give two cards to the player and two cards to himself. One of the dealer cards is dealt face up. The facedown card is called the "hole card."
+* The dealer will give two cards to the player and two cards to themself. One of the dealer cards is dealt face up. The facedown card is called the "hole card."
 * Play begins with the player. The following are the choices available to the player:
- - Stand: Player stands pat with his cards.
- - Hit: Player draws another card (and more if he wishes). If this card causes the player's total points to exceed 21 (known as "breaking" or "busting") then he loses.
-* After the player has had his turn, the dealer will turn over his hole card. If the dealer has 16 or less, then he will draw another card.
+ - Stand: Player stays put with their cards.
+ - Hit: Player draws another card (and more if they wishes). If this card causes the player's total points to exceed 21 (known as "breaking" or "busting") then they lose.
+* After the player has had their turn, the dealer will turn over the hole card. If the dealer has 16 or less, then they will draw another card.
 * If the dealer does have a blackjack, then the player will lose, unless the player also has a blackjack, which will result in a draw.
 * If the dealer goes over 21 points then the player will win.
 * If the dealer does not bust, then the higher point total between the player and dealer will win.
