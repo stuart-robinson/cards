@@ -1,7 +1,9 @@
 Installation
 
 1 - Clone this github repo: `git clone git@github.com:stuart-robinson/cards.git`
+
 2 - Install required packages: `yarn` (or npm)
+
 3 - Run the local dev server with `yarn start`
 
 Rules
