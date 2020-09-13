@@ -12,8 +12,8 @@ Rules
 * Prior to starting the game the cards must be shuffled
 * The dealer will give two cards to the player and two cards to themself. One of the dealer cards is dealt face up. The facedown card is called the "hole card."
 * Play begins with the player. The following choices available to the player:
- - "Stand": Player stays put with their cards.
- - "Hit": Player draws another card. If this card causes the player's total points to exceed 21 ("bust") then they will lose.
+    * "Stand": Player stays put with their cards.
+    * "Hit": Player draws another card. If this card causes the player's total points to exceed 21 ("bust") then they will lose.
 * After the player has had their turn, the dealer will turn over the hole card.
 * If the dealer has a lower score than the player the dealer will draw more cards until they either win, bust or draw
 
